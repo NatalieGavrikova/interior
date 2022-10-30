@@ -1,0 +1,189 @@
+.top_cart {
+    height: 400px;
+    background-image: url(../img/topcart.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.title_cart {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 70px;
+    color: #FFFFFF;    
+    margin-top: 127px;
+}
+ .cart {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+    margin-top: 64px;
+
+    &_name_box {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 14px;
+    }
+
+    &_item {
+        border-top: 0.5px solid #CACDD8;;
+        padding-top: 25px;
+        padding-bottom: 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;     
+        
+        &_number {
+            box-sizing: border-box;
+            border: none;
+            width: 71px;
+            height: 51px;
+            background: #F7F6F6;
+            border-radius: 6px;  
+            outline: none;  
+            font-weight: 600;
+            font-size: 14px;                                 
+            color: #000000;
+            padding-left: 15px;
+            font-family: 'Poppins';
+        }
+    }
+
+    &_left {
+        display: flex;
+        gap: 32px;
+    }
+
+    &_info {
+        width: 276px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;  
+        justify-content: space-between;
+
+        &_name {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000000;
+        }    
+
+        &_desc {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;            
+            color: #888888;            
+        }
+
+        &_price {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;            
+            color: #050505;            
+        }
+    }
+
+    &_link_box {
+        display: flex;
+        gap: 30px;
+
+        &_item {
+            font-weight: 400;
+            font-size: 14px;
+            text-decoration-line: underline;            
+            color: #000000;            
+        }
+
+        &_item:hover {
+            color: #888888;
+            text-decoration-line: none;
+        }
+          
+    }
+
+    &_content {
+        grid-column: span 8;
+    }
+
+    &_form {
+        height: 556px;
+        background: #F7F6F6;
+        border-radius: 20px;
+        grid-column: span 4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;   
+        
+        &_title {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 36px;            
+            color: #000000;     
+            padding-top: 42px;       
+        }
+    }
+    &_input {
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 1px solid #CACDD8;
+        background-color:  #F7F6F6;
+        width: 288px;
+        outline: none;
+        font-family: 'Montserrat';
+        
+        
+            &::placeholder {
+                font-weight: 400;
+                font-size: 14px;       
+                color: #000000;   
+            }
+
+    }
+    
+    &_price_total {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;  
+        color: #000000;   
+        padding-top: 24px;     
+    }
+
+    &_button {
+        box-sizing: border-box;        
+        width: 200px;
+        height: 37px;
+        border: 1px solid #000000;
+        border-radius: 50px; 
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;    
+        transition: all 1s;              
+    }
+
+    &_button:hover {
+        background: #000000;   
+        color: #FFFFFF;  
+    }  
+
+    &_button_form {
+        width: 290px;
+        box-sizing: border-box;        
+        height: 37px;
+        border: 1px solid #000000;
+        border-radius: 50px; 
+        font-weight: 400;              
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;                
+        color: #000000;     
+        transition: all .3s;   
+    }
+
+    &_button_form:hover {        
+        transform: scale(1.05);
+        box-shadow: 0 0 5px #777;   
+    }    
+
+ }
